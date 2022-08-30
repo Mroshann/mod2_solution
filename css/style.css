@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 3%;
+}
+
+.p {
+  display: block;
+  width: 30%;
+  height: 200px;
+  line-height: 1.5;
+  border: 3px solid #000;
+  padding: 42px 18px 18px 18px;
+  position: relative;
+  overflow: hidden;
+}
+
+.tag {
+  position: absolute;
+  top: -0.5%;
+  right: -0.5%;
+  padding: 6px 32px;
+  text-align: center;
+  width: 130px;
+  font-weight: 800;
+  border-left: 3px solid #000;
+  border-bottom: 3px solid #000;
+}
+
+.tag-one {
+  background-color: rgb(248, 137, 137);
+}
+
+.tag-two {
+  background-color: red;
+  color: #fff;
+}
+
+.tag-three {
+  background-color: rgb(227, 227, 155);
+}
+
+@media (min-width: 992px) {
+  .p2 {
+    float: left;
+    margin-left: 1.65%;
+  }
+  .p1 {
+    float: left;
+    margin-left: 3.33%;
+  }
+
+  .p3 {
+    float: right;
+    margin-right: 3.33%;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .p {
+    width: 42.5%;
+  }
+  .p2 {
+    float: right;
+    margin-right: 5%;
+    margin-bottom: 5%;
+  }
+
+  .p1 {
+    float: left;
+    margin-left: 5%;
+    margin-bottom: 5%;
+  }
+  .p3 {
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+}
+
+@media (max-width: 767px) {
+  .p {
+    width: 90%;
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+}
